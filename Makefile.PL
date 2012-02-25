@@ -4,7 +4,11 @@ use Module::Install::AuthorTests;
 name 'WWW-Gumroad';
 all_from 'lib/WWW/Gumroad.pm';
 
-#requires '';
+requires 'Carp';
+requires 'URI';
+requires 'HTTP::Request';
+requires 'LWP::UserAgent';
+requires 'JSON';
 
 test_requires 'Test::More', 0.98;
 
